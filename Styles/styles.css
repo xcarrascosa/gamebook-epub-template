@@ -1,0 +1,255 @@
+/* Estilos de texto para libro ePub */
+
+/* Familia de fuentes tipográficas */
+
+@font-face {
+  font-family: 'crimson';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../Fonts/CrimsonText-Roman.ttf);
+}
+
+@font-face {
+  font-family: 'crimson';
+  font-style: italic;
+  font-weight: normal;
+  src: url(../Fonts/CrimsonText-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'crimson';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../Fonts/CrimsonText-Semibold.ttf);
+}
+
+/* Estilos basados en el template: ePub base r1.2 ePubLibre */
+
+/* Cuerpo de texto */
+
+body {
+  font-family: crimson;
+  margin: 1em;
+  padding: 0;
+  border: 0;
+}
+
+/* Párrafo */
+
+p {
+  margin: 0;
+  text-align: justify;
+  text-indent: 1.5em;
+  line-height: 1.25em;
+}
+
+/* Encabezados */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 25% 0.25em 1em;
+  text-align: center;
+  text-indent: 0;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  hyphens: none;
+  -moz-hyphens: none;
+  -webkit-hyphens: none;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+/* Dedicatoria */
+
+.dedicatoria {
+  margin: 5em 1em 0 3em;
+  text-align: right;
+}
+
+.dedicatoria p {
+  text-align: right;
+  text-indent: 0;
+}
+
+/* Enlaces */
+
+a,
+.normal {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Subíncide y superíndice */
+
+sup,
+sub {
+  font-size: 0.75em;
+  line-height: normal;
+}
+
+/* Estilos de portada y cubiertas */
+
+.cubierta {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  text-align: center;
+  text-indent: 0;
+  page-break-before: always;
+  page-break-after: always;
+}
+
+.cubierta img {
+  height: 100%;
+  max-height: 100%;
+}
+
+/* Alineación */
+
+.izquierda,
+.izquierda p {
+  text-align: left;
+}
+
+.derecha,
+.derecha p {
+  text-align: right;
+  text-indent: 0;
+}
+
+.centrado,
+.centrado p {
+  text-align: center;
+  text-indent: 0;
+}
+
+.justificado,
+.justificado p {
+  text-align: justify;
+}
+
+.asangre,
+.asangre p {
+  text-indent: 0;
+}
+
+/* Hipervínculos */
+
+.sintop {
+  margin-top: 0;
+}
+
+.saltoinicio {
+  margin-top: 33%;
+}
+
+.salto05 {
+  padding-top: 0.5em;
+}
+
+.salto10 {
+  padding-top: 1em;
+}
+
+.salto25 {
+  padding-top: 2.5em;
+}
+
+
+/* Bloques */
+
+.sinmargen {
+  margin: 0;
+}
+
+blockquote,
+.cita {
+  margin: 1.5em;
+}
+
+.bloque {
+  page-break-inside: avoid;
+}
+
+/* Evita dividir un elemento entre páginas */
+
+.nosep {
+  text-indent: 0;
+  display: inline-block;
+}
+
+/* Evita dividir una palabra entre líneas */
+
+.extenso {
+  orphans: 0;
+  widows: 0;
+}
+
+/* Evita división aleatoria de párrafos muy extensos (bug ADE) */
+
+.banner {
+  margin: 1.5em 12%;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-indent: 0;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.banner p {
+  text-align: center;
+  text-indent: 0;
+}
+
+/* Listas */
+
+li {
+  margin: 0;
+  text-align: justify;
+  text-indent: 0;
+  line-height: 1.3em;
+}
+
+/* Imágenes simples */
+/* para página completa usar el estilo fijo «cubierta» */
+
+.ilustra {
+  margin: 1em 0;
+  text-align: center;
+  text-indent: 0;
+  display: block;
+}
+
+.ilustra img {
+  max-height: 100%;
+  max-width: 100%;
+}
